@@ -15,7 +15,7 @@ and top right coordinates (x, y) in a cartesian plane where both x, y > 0,0
 
 ```json
 GET     /api/rectangle                  -   fetches all existing rectangles in the db 
-GET     /api/rectangle/{id}                  
+GET     /api/rectangle/id                 
 POST    /api/rectangle                  -   { 
                                                 "bottomLeftX": 2,  
                                                 "bottomLeftY": 2,  
@@ -29,7 +29,7 @@ PUT     /api/rectangle                  -   {
                                                 "topRightX": 5,  
                                                 "topRightY": 4 
                                             } 
-DELETE  /api/rectangle/{id}
+DELETE  /api/rectangle/id
 ```
   
 it's also possible to calculate the following operations providing the respective id's of two existing Rectangle objects  
